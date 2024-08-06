@@ -1,0 +1,117 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #222;
+  color: #c9c9c9;
+}
+h1, h2 {
+  color: #e1e1e1;
+}
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.input-wrapper {
+  flex: 1;
+  position: relative;
+}
+.char-count {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  font-size: 0.8em;
+  color: #757575;
+  pointer-events: none;
+}
+#message-list {
+  margin-top: 20px;
+}
+.message {
+  background-color: #2a2a2a;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.message-content {
+  display: flex;
+  flex-direction: column;
+}
+.message-name {
+  font-weight: bold;
+  color: #eb99a1;
+}
+.message-text {
+  color: #c9c9c9;
+}
+.message-timestamp {
+  font-size: 0.8em;
+  color: #757575;
+  text-align: right;
+  margin-top: 5px;
+}
+#guest-counter {
+  margin-bottom: 15px;
+  font-style: italic;
+  color: #eb99a1;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  padding-right: 45px;
+  background-color: #2a2a2a;
+  border: 1px solid #4a4a4a;
+  color: #c9c9c9;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 0.9em;
+  box-sizing: border-box;
+}
+input[type="text"]:focus {
+  border-color: #eb99a1;
+  outline: none;
+}
+button {
+  background-color: #eb99a1;
+  color: #222;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 0 auto;
+}
+button:hover {
+  background-color: #e37383;
+}
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #757575;
+}
+.footer a {
+  color: #eb99a1;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  body {
+      padding: 10px;
+  }
+  .input-group {
+      flex-direction: column;
+  }
+  button {
+      width: 100%;
+  }
+}
+.emoji {
+  font-style: normal;
+}
