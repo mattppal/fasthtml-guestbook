@@ -1,11 +1,12 @@
 [tool.poetry]
-name = "python-template"
+name = "FastHTML Guestbook"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Matt Palmer"]
+package-mode = false
 
 [tool.poetry.dependencies]
-python = ">=3.10.0,<3.12"
+python = "=3.12"
 python-fasthtml = "^0.2.1"
 isort = "^5.13.2"
 replit = "^4.0.0"
